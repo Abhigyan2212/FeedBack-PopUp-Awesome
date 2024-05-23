@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- responsive -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- animation -->
+    <link rel="stylesheet" href="assets/css/animation.css">
+
+
+
+    
+</head>
+<body>
+    <main class="overflow-hideen">
+        <div class="animationTrigger container position-relative popup">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-md-5 dt-45 pe-0 order_c tab-100">
+                        <div class="sideImg">
+                            <img src="assets/images/arr (4).jpg" alt="user">
+                        </div>
+                    </div>
+                    <div class="col-md-7 dt-55 ps-0 tab-100">
+                        <div class="rating">
+                            <article class="ratingTxt">
+                                <h1 class="mainHeading">
+                                    Give Feedback
+                                </h1>
+                                <p class="ratingdesc">What do you think of the ediing tool?</p>
+                            </article>
+
+                            <form method="post" novalidate>
+                                <div class="ratingicons">
+                                    <img class="pop" src="assets/images/ratingGifPng/happy1.png" alt="emoji">
+                                    <img class="pop delay-100" src="assets/images/ratingGifPng/happy2.png" alt="emoji">
+                                    <img class="pop delay-200" src="assets/images/ratingGifPng/happy3.png" alt="emoji">
+                                    <img class="pop delay-300" src="assets/images/ratingGifPng/happy4.png" alt="emoji">
+                                    <img class="pop delay-400" src="assets/images/ratingGifPng/sad.png" alt="emoji">
+                                </div>
+                                <div class="inputField">
+                                    <label class="ratingdesc" for="message">Do you have thoughts you 'd like to share?</label>
+                                    <textarea name="message" id="message" placeholder="Here....."></textarea>
+                                </div>
+                                <div class="radiofield">
+                                    <h3 class="subHeading">May we follow you up on your feedback?</h3>
+                                    <div class="d-flex">
+                                        <div class="radioSingle">
+                                            <input type="radio" name="followup">
+                                            <label class="subHeading" for="followup">Yes</label>
+                                        </div>
+                                        <div class="radioSingle">
+                                            <input type="radio" name="followup">
+                                            <label class="subHeading" for="followup">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="sendCancel">
+                                <button id="sub">Send</button>
+                                <button class="cancel">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cross">
+                X
+            </div>
+        </div>
+    </main>
+    
+
+
+
+
+
+    <!-- Bootstrap 5 -->
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="assets/js/jQuery/jquery-3.6.4.min.js"></script>
+
+    <!-- My JS -->
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>

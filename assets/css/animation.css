@@ -1,0 +1,72 @@
+.pop
+{
+    animation: pop 0.3s forwards ease-in-out;
+    transform: scale(0);
+    animation-delay: 0.5s;
+}
+@keyframes pop {
+    from
+    {
+        transform: scale(0);
+    }
+    to
+    {
+        transform: scale(1.0);
+    }
+}
+.delay-100
+{
+    animation-delay: calc(0.5s + 100ms);
+}
+.delay-200
+{
+    animation-delay: calc(0.5s + 200ms);
+}
+.delay-300
+{
+    animation-delay: calc(0.5s + 300ms);
+}
+.delay-400
+{
+    animation-delay: calc(0.5s + 400ms);
+}
+.delay-500
+{
+    animation-delay: calc(0.5s + 500ms);
+}
+.popup
+{
+    animation: popup 0.5s linear forwards;
+}
+@keyframes popup {
+    0%
+    {
+        transform: scale(0.5) translateY(-200%);
+    }
+    50%
+    {
+        transform: scale(0.5) translateY(0);
+    }
+    100%
+    {
+        transform: scale(1.0) translateY(0);
+    }
+}
+.popup-reverse
+{
+    animation: popup-reverse 0.5s linear forwards;
+}
+@keyframes popup-reverse {
+    100%
+    {
+        transform: scale(0.5) translateY(-200%);
+    }
+    50%
+    {
+        transform: scale(0.5) translateY(0);
+    }
+    0%
+    {
+        transform: scale(1.0) translateY(0);
+    }
+}

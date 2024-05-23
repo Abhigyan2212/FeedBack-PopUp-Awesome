@@ -1,0 +1,138 @@
+/* large screens */
+@media (min-width: 1600px)
+{
+    .container
+    {
+        max-width: 1140px;
+    }
+    .thankyouPage .container
+    {
+        max-width: 800px;
+    }
+    .dt-45
+    {
+        width: 45%;
+    }
+    .dt-55
+    {
+        width: 55%;
+    }
+}
+
+
+@media (max-width: 1500px)
+{
+    .container
+    {
+        max-width: 1085px;
+    }
+    .rating
+    {
+        padding: 65px 55px;
+    }
+}
+
+
+/* Desktops/Laptops */
+@media (max-width: 1200px)
+{
+
+}
+
+/* Laptops */
+@media (max-width: 1024px)
+{
+    .cross
+    {
+        right: 0;
+    }
+
+
+}
+
+/* Tablets */
+@media (max-width: 768px)
+{
+    .container
+    {
+        max-width: 600px;
+    }
+    .tab-100
+    {
+        width: 100%;
+    }
+    .order_c
+    {
+        order: 2;
+        display: none;
+    }
+    .thankyou
+    {
+        padding: 40px 80px;
+        height: auto;
+    }
+    .thankyouHeading
+    {
+        font-size: 30px;
+    }
+}
+
+/* mobile */
+@media (max-width: 480px)
+{
+    main
+    {
+        padding: 40px 0;
+    }
+    .rating
+    {
+        padding: 50px 20px;
+    }
+    .mainHeading
+    {
+        font-size: 20px;
+    }
+    .ratingdesc
+    {
+        font-size: 10px;
+    }
+    form
+    {
+        margin: 20px 0;
+        padding: 15px 0;
+    }
+    .ratingicons
+    {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .ratingicons img
+    {
+        width: 71px;
+    }
+    .inputField textarea
+    {
+        width: 100%;
+    }
+    .subHeading
+    {
+        font-size: 12px;
+    }
+    .sendCancel
+    {
+        flex-wrap: wrap;
+    }
+    .sendCancel button
+    {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+
+    .thankyou
+    {
+        padding: 40px 20px;
+    }
+
+}

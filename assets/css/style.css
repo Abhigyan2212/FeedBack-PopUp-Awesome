@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root
+{
+    --primary-color: rgb(60, 112, 255);
+
+}
+
+  
+body
+{
+    font-family: "Unbounded";
+    color: rgb(41, 41, 41);
+}
+main
+{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    display: grid;
+    padding: 100px 0 70px 0;
+    align-content: center;
+}
+.wrapper
+{
+    margin: 0 auto;
+    height: auto;
+    box-shadow: 0px 0px 90px 0px rgba(19, 19, 19, 0.08);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.sideImg
+{
+    width: 100%;
+    height: 100%;
+}
+.sideImg img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.rating
+{
+    width: 100%;
+    background-color: rgb(255, 255, 255);   
+    height: 100%;
+    padding: 65px 75px;
+}
+.ratingTxt *
+{
+    margin: 0;
+}
+.mainHeading
+{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.ratingdesc
+{
+    font-size: 14px;
+    color: rgb(88, 88, 88); 
+}
+form
+{
+    border-top: solid 1px rgb(237, 237, 237);
+    border-bottom: solid 1px rgb(237, 237, 237);
+    margin: 40px 0;
+    padding: 30px 0;
+}
+.ratingicons
+{
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.ratingicons img
+{
+    width: 21%;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 50%;
+    background-color: transparent;
+    height: 71px;
+    padding: 8px;
+}
+.ratingicons img.active
+{
+    background-color: rgb(241, 244, 250);
+}
+.inputField
+{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+.inputField label.ratingdesc
+{
+    margin-bottom: 15px;
+}
+.inputField textarea
+{
+    border: solid 3px rgb(189, 203, 230);
+    border-radius: 12px;
+    background-color: rgba(246, 204, 0, 0);
+    height: 150px;
+    width: 87%; 
+    resize: none;
+    padding: 20px;
+    transition: 0.4s;
+
+}
+.inputField textarea:focus
+{
+    outline: none;
+    border-color: var(--primary-color);
+}
+::placeholder
+{
+    font-size: 10px;
+    color: rgb(209, 209, 209);
+}
+.subHeading
+{
+    font-size: 15px;
+    font-weight: bold;
+}
+.radioSingle
+{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.radioSingle input
+{
+    -webkit-appearance: none;
+    border: solid 2px rgb(189, 203, 230);
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+    cursor: pointer;
+    position: relative;
+}
+.radioSingle input::before
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    width: 18px;
+    height: 18px;
+    display: none;
+}
+.radioSingle input:checked::before
+{
+    display: block;
+}
+.sendCancel
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.sendCancel button
+{
+    border-radius: 32px;
+    background-color: var(--primary-color);
+    height: 63px;
+    width: 47%;
+    border: 0;
+    font-size: 15px;
+    color: rgb(255, 255, 255); 
+    position: relative;
+    overflow: hidden;
+}
+.sendCancel .cancel
+{
+    border: solid 2px rgb(189, 203, 230);
+    background-color: rgb(255, 255, 255);
+    color: rgb(41, 41, 41);
+}
+.sendCancel button::before, .sendCancel button::after
+{
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    background-color: rgba(255, 255, 255,0.5);
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 0, 100% 0, 50% 100%, 0% 100%);
+    transition: 0.4s;
+    z-index: 0;
+
+
+}
+.sendCancel button:hover::before,.sendCancel button:hover::after
+{
+    right: -100%;
+}
+.sendCancel button::after
+{
+    transition-delay: 0.2s;
+
+
+}
+.cross
+{
+    border-radius: 50%;
+    background-color: rgb(58, 58, 58);
+    width: 62px;
+    height: 62px; 
+    position: absolute;
+    top: -32px;
+    right: -12px;
+    display: grid;
+    place-content: center;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+}
+.thankyou
+{
+    background-image: url(../images/thankyou.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    min-height: 600px;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    padding: 40px 150px;
+}
+.thankyou img
+{
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.thankyouHeading
+{
+    font-size: 40px;
+    color: rgb(41, 41, 41);
+    font-weight: bold;
+    margin: 20px 0;
+}
+.subscribe
+{
+    background-color: rgb(98, 136, 158);
+    box-shadow: 0px 0px 90px 0px rgba(19, 19, 19, 0.08);
+    width: 100%;
+    border-radius: 100px;
+    height: 85px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 0 40px;
+}
+.subscribe::before
+{
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 90px 0px rgba(19, 19, 19, 0.08);
+    height: 85px;
+    width: 97%;
+    border-radius: inherit;
+    z-index: 0;
+    pointer-events: none;
+}
+.subscribe input, .subscribe button
+{
+    position: relative;
+    z-index: 10;
+}
+.subscribe input
+{
+    border: 0;
+    background-color: transparent;
+    width: max-content;
+
+}
+.subscribe input:focus
+{
+    outline: none;
+}
+.subscribe input::placeholder
+{
+    font-size: 12px;
+    color: rgb(106, 106, 106);
+}
+.subscribe button
+{
+    border-radius: 50%;
+    background-color: rgb(98, 136, 158);
+    width: 70px;
+    height: 70px; 
+    font-size: 16px;
+    display: grid;
+    place-content: center;
+    color: rgb(255, 255, 255);
+    border: 0;
+    transition: 0.5s;
+}
+.subscribe button i
+{
+    transition: 0.5s ;
+}
+.subscribe button:hover i
+{
+    padding-left: 10px;
+}
